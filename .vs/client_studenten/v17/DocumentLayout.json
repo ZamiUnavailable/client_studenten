@@ -34,7 +34,12 @@
               "RelativeToolTip": "lessen\\week-2\\les-2\\usecase-random-getallen\\studentversie\\server\\server.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+<<<<<<< HEAD
               "WhenOpened": "2025-02-13T09:38:29.908Z"
+=======
+              "WhenOpened": "2025-02-13T09:38:29.908Z",
+              "EditorCaption": ""
+>>>>>>> main
             },
             {
               "$type": "Document",

@@ -13,14 +13,15 @@
         const requestPromises = [];
 
         for (let i = 0; i < aantalRandomGetallen; i++) {
-            requestPromises.push(fetch('http://localhost:3000/random'));
+           await requestPromises.push(fetch('http://localhost:3000/random'));
         }
 
         //student uitwerking
 
         let sum = 0;
         for(const response of responses) {
-
+            sum = sum + response;
+            console.log(sum);
             //student uitwerking
         }
 
