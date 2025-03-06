@@ -2,9 +2,11 @@ class Data {
 
     async getAnswer(gok) {
 
-        //#student-start
-        //#student-end
+        let r = await fetch(`http://localhost:3000/getal?gok=${gok}`);
+        let data = await r.json();
 
+        
+        return data.result.toString(); // Enkel de waarde van "result" returnen
     }
 
 }
