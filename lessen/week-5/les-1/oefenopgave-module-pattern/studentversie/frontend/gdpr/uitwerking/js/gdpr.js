@@ -1,5 +1,6 @@
 
-    const init = () => {
+ gdpr = (function(){  
+ const init = () => {
         showStatus();
         showContent();
         bindEvents();
@@ -25,7 +26,7 @@
         });
 
     }
-
+    
     const showContent = () => {
         resetContent();
         const status = cookieStatus() == null ? 'not-chosen' : cookieStatus();
@@ -81,5 +82,19 @@
     }
 
 
-init();
+    return{
+        //externe naam: interne naam
+        init: init
+ //       bindEvents: bindEvents,
+ //       showContent: showContent,
+ //       resetContent: resetContent,
+ //       showStatus: showStatus,       //alleen degene die je buiten dit module ding aanroept moeten hiering.
+ //       saveMetaData: saveMetaData,
+ //       hideGDPR: hideGDPR,
+ //       showGDPR: showGDPR
 
+    }
+  })();
+
+
+    gdpr.init();
